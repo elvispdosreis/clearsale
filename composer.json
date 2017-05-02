@@ -1,0 +1,20 @@
+{
+    "name": "reis/clearsale",
+    "description": "Integracao ClearSale, em desenvolvimento ... ",
+    "type": "library",
+    "require": {
+        "php": ">=5.5",
+        "psr/log": "^1.0"
+    },
+    "authors": [
+        {
+            "name": "Elvis P. dos Reis",
+            "email": "elvisdosreis@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "autoload": {
+        "psr-4": {"ClearSale\\": "src"}
+    }
+}

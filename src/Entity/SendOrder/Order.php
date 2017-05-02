@@ -696,10 +696,6 @@ class Order
             $order->addChild('Obs', $this->notes);
         }
 
-        if ($this->notes) {
-            $order->addChild('Obs', $this->notes);
-        }
-
         if ($this->status) {
             $order->addChild('Status', $this->status);
         }

@@ -37,6 +37,7 @@ class Card
     private $securityCode;
     private $expirationDate;
     private $bin;
+    private $end;
     private $nsu;
 
     /**
@@ -166,6 +167,24 @@ class Card
     /**
      * @return mixed
      */
+    public function getEnd()
+    {
+        return $this->end;
+    }
+
+    /**
+     * @param mixed $end
+     * @return Card
+     */
+    public function setEnd($end)
+    {
+        $this->end = $end;
+        return $this;
+    }
+
+    /**
+     * @return mixed
+     */
     public function getNsu()
     {
         return $this->nsu;
@@ -192,8 +211,8 @@ class Card
             $card->addChild('CardBin', $this->bin);
         }
 
-        if ($this->securityCode) {
-            $card->addChild('CardEndNumber', $this->securityCode);
+        if ($this->end) {
+            $card->addChild('CardEndNumber', $this->end);
         }
 
         if ($this->type) {
